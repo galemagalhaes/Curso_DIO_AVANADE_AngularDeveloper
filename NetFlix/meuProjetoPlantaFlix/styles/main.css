@@ -1,0 +1,96 @@
+:root{
+  --verde: rgb(3, 119, 9);
+  --marrom:rgb(117, 73, 11);
+  --preta: #000;
+  --verdenho: rgb(143, 248, 6);
+  --verdinho: rgb(145, 197, 3);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*base*/
+body{
+  background: var(--preta);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo{
+  color: var(--verdenho);
+  margin-left: 5px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--verdenho);
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  color: var(--verdinho);
+}
+
+/*Principal*/
+.plantas-principais{
+  font-size:16px;
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0.50)100%), url(../img/rainha.jfif);
+
+  height: 400px;
+  background: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+.plantas-principais .descricao{
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+}
+.plantas-principais .titulo{
+  margin-top: 15%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 50px;
+}
+
+.botao{
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+.botao:hover{
+  background-color:white;
+  color: black
+}
+.botao i{
+  margin-right: 8px;
+}
+
+.container{
+  margin-left: 30px;
+}
+.plantas-principais .container{
+  width: 70%;
+}
