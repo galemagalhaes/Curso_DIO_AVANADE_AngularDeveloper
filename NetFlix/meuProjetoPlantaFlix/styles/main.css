@@ -1,9 +1,9 @@
 :root{
   --verde: rgb(3, 119, 9);
   --marrom:rgb(117, 73, 11);
-  --preta: #000;
+  --claro: rgb(222, 243, 220);
   --verdenho: rgb(143, 248, 6);
-  --verdinho: rgb(145, 197, 3);
+  --verdinho: rgb(63, 85, 4);
 }
 *{
   margin: 0;
@@ -14,7 +14,7 @@
 
 /*base*/
 body{
-  background: var(--preta);
+  background: var(--claro);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
 }
@@ -27,26 +27,26 @@ header .container{
 }
 
 header .logo{
-  color: var(--verdenho);
+  color: var(--verde);
   margin-left: 5px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 header nav a {
   text-decoration: none;
-  color: var(--verdenho);
+  color: var(--marrom);
   margin-right: 10px;
 }
 
 header nav a:hover{
-  color: var(--verdinho);
+  color: var(--verdenho);
 }
 
 /*Principal*/
 .plantas-principais{
-  font-size:16px;
-  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0.50)100%), url(../img/rainha.jfif);
+  font-size:15px;
+  background: linear-gradient(rgba(1, 49, 5, 0.5), rgba(1, 49, 5, 0.5)100%), url(../img/capa.jpg);
 
   height: 400px;
   background: cover;
@@ -93,4 +93,14 @@ header nav a:hover{
 }
 .plantas-principais .container{
   width: 70%;
+}
+
+.box-plantas{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrossel-plantas{
+  margin-top: 5px;
 }
